@@ -1,0 +1,263 @@
+/* general */
+*,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Dancing Script", cursive;
+}
+
+/* HEADER */
+header {
+    background-image: url("view.jpg");
+    min-height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    min-height: 750px;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-family: "McLaren", cursive;
+    font-size: 68px;
+    color: white;
+    text-align: center;
+
+    margin: auto;
+    padding-top: 180px;
+}
+
+p {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+
+    margin: auto;
+    padding-top: 30px;
+}
+
+span {
+    text-shadow: 1px 1px 2px black, 3px 3px 3px red, 5px 5px 6px green;
+}
+
+.tomatoes {
+    display: flex;
+    justify-content: center;
+}
+
+.tomatoes img {
+    height: 80px;
+    padding: 50px 20px;
+}
+
+/* MEALS */
+.title {
+    font-size: 24px;
+    color: black;
+
+    padding-top: 20px;
+}
+
+.meals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    justify-content: center;
+    padding: 60px 120px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.meal img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+h2 {
+    font-family: "McLaren", cursive;
+    font-size: 40px;
+    color: rgb(213, 11, 11);
+    text-align: center;
+
+    padding-top: 40px;
+}
+
+.container-reviews h2 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 3px 3px 3px rgba(213, 11, 11, 0.783),
+        5px 5px 6px green;
+}
+
+.description {
+    font-size: 16px;
+    font-style: italic;
+    color: black;
+
+    padding: 16px 60px;
+}
+
+/* WRITE REVIEWS */
+.write-review {
+    margin-left: 24%;
+    margin-right: 24%;
+    padding-bottom: 60px;
+}
+
+form {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+/* name */
+input[type="text"] {
+    font-size: 16px;
+    color: white;
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 16px 0;
+    display: inline-block;
+
+    border: 1px solid rgba(213, 11, 11, 0.269);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(213, 11, 11, 0.269);
+}
+
+/* rating */
+.star-widget {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+}
+
+.star-widget input {
+    display: none;
+}
+
+.star-widget label {
+    font-size: 30px;
+    color: rgba(213, 11, 11, 0.269);
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.star-label,
+label {
+    font-size: 20px;
+    text-align: left;
+    color: rgb(254, 227, 227);
+
+    margin-bottom: 16px;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+    color: #fd4;
+}
+
+input:checked ~ label {
+    color: #fd4;
+}
+
+input#rate-5:checked ~ label {
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+/* comment */
+.comment-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+textarea {
+    font-size: 16px;
+    color: white;
+
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin-top: 16px;
+
+    box-sizing: border-box;
+    border: 1px solid rgba(213, 11, 11, 0.269);
+    border-radius: 4px;
+    resize: none;
+
+    background-color: rgba(213, 11, 11, 0.269);
+}
+
+/* submit */
+input[type="submit"] {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    background-color: rgba(213, 11, 11, 0.358);
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+}
+
+/* OTHER REVIEWS */
+.container-reviews {
+    padding: 0;
+    background-color: rgb(14, 6, 6);
+}
+
+.reviews {
+    margin: 0;
+    padding-left: 24%;
+    padding-right: 24%;
+    background-color: black;
+}
+
+.reviews ul {
+    list-style-type: none;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.reviews p {
+    text-align: center;
+    color: white;
+
+    background-color: rgb(14, 6, 6);
+}
+
+.writer {
+    padding-top: 40px;
+    font-size: 18px;
+}
+
+.rating {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.comment {
+    font-size: 24px;
+    padding: 30px 20px 40px;
+    margin-bottom: 30px;
+}
+
+.error-message {
+    font-size: 14px;
+    color: red;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 0;
+}
