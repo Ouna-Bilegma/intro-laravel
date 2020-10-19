@@ -42,6 +42,6 @@ nav li a:hover {
 }
 
 .current_page_item a {
-    color: red;
-    text-shadow: 1px 1px 3px green;
+    color: rgb(92, 207, 241);
+    text-shadow: 1px 1px 3px rgb(171, 228, 14);
 }

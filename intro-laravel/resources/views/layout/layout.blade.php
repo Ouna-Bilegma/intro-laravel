@@ -38,7 +38,7 @@
     </main>
 
     <footer>
-        <p class="footer">author: Lisa Baetsle</p>
+        <p class="footer">Becode 2020</p>
     </footer>
 </body>
 
