@@ -8,7 +8,7 @@ body {
 
 /* HEADER */
 header {
-    background-image: url("view.jpg");
+    background-image: url("su-san-lee-E_eWwM29wfU-unsplash.jpg");
     min-height: 750px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,8 +95,8 @@ h2 {
 }
 
 .description {
-    font-size: 16px;
-    font-style: italic;
+    font-size: 20px;
+    font-style: bold;
     color: black;
 
     padding: 16px 60px;
